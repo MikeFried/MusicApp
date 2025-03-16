@@ -3,6 +3,7 @@
 #define UNICODE
 #define _UNICODE
 #include <windows.h>
+#include "ConfigDialog.h"
 
 // Window class name
 #define WINDOW_CLASS_NAME L"MusicAppMainWindow"

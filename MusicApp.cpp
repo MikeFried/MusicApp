@@ -99,9 +99,11 @@ void HandleCommand(HWND hwnd, WPARAM wParam)
     switch (LOWORD(wParam))
     {
         case ID_FILE_SETTINGS:
-            // TODO: Implement settings dialog
-            MessageBoxW(hwnd, L"Settings dialog will be implemented later", L"Settings", MB_OK | MB_ICONINFORMATION);
+        {
+            ConfigDialog dialog(hwnd);
+            dialog.Show();
             break;
+        }
 
         case ID_FILE_EXIT:
             DestroyWindow(hwnd);
